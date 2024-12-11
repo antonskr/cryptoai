@@ -1,0 +1,83 @@
+/* register.module.css */
+
+/* Блок страницы */
+.registerPage {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    padding: 40px;
+    min-height: 100vh;
+  }
+  
+  /* Контейнер для формы регистрации */
+  .registerPage__container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Заголовок */
+  .registerPage__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Форма регистрации */
+  .registerPage__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Поля ввода */
+  .registerPage__input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .registerPage__input:focus {
+    border-color: #0070f3;
+  }
+  
+  /* Кнопка отправки формы */
+  .registerPage__button {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .registerPage__button:hover {
+    background-color: #005bb5;
+  }
+  
+  .registerPage__button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Сообщения об ошибке */
+  .registerPage__errorMessage {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Сообщения об успешной регистрации */
+  .registerPage__successMessage {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+  }
+  

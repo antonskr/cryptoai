@@ -1,0 +1,131 @@
+/* page.module.css */
+
+.page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.page ol {
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.page h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.page p {
+  font-size: 16px;
+  color: #666;
+}
+
+.page .ctas {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ctas a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #0070f3;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.ctas a:hover {
+  background-color: #005bb5;
+}
+
+.ctas a.secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.ctas a.secondary:hover {
+  background-color: #d0d0d0;
+}
+
+.page footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+  font-size: 14px;
+  color: #666;
+}
+
+.page footer a {
+  text-decoration: none;
+  color: #0070f3;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.page footer a:hover {
+  color: #005bb5;
+}
+
+.page footer a img {
+  margin-right: 8px;
+}
+
+.primary {
+  background-color: #0070f3;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.primary:hover {
+  background-color: #005bb5;
+}
+
+.secondary {
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.secondary:hover {
+  background-color: #d0d0d0;
+}
+
+.secondary:active {
+  transform: scale(0.98);
+}
