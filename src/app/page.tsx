@@ -6,7 +6,12 @@ import styles from './page.module.css';
 import MatrixCanvas from './components/MatrixCanvas/MatrixCanvas';
 
 export default function Home() {
-  const [user, setUser] = useState<any>(null);
+  interface User {
+    email: string;
+    _id: string;
+  }
+
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
