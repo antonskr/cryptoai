@@ -3,7 +3,12 @@
 import { useEffect, useState } from 'react';
 
 export default function ProfilePage() {
-  const [user, setUser] = useState<any>(null);
+  interface User {
+    _id: string;
+    email: string;
+  }
+
+  const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
