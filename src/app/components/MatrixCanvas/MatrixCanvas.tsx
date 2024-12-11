@@ -168,7 +168,6 @@ const MatrixCanvas = () => {
 
       data.forEach((value, index) => {
         const x = index * barWidth;
-        const y = canvas.height - value * 10; // Умножаем на 10 для увеличения масштаба
         const height = value * 10; // Высота столбца
 
         // Градиентный цвет для столбцов
