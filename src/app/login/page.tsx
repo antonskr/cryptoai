@@ -7,7 +7,7 @@ import styles from "./login.module.css";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(null as string | null);
   const [loading, setLoading] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState(false); // Состояние для видимости пароля
   const router = useRouter();
@@ -38,7 +38,11 @@ export default function Login() {
       // Перенаправление на главную страницу
       router.push("/");
     } catch (err) {
-      setError(err.message);
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("An unknown error occurred");
+      }
     } finally {
       setLoading(false);
     }
